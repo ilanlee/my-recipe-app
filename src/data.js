@@ -1,10 +1,12 @@
-import spaghettiCarbonaraImage from '$lib/images/SpaghettiCarbonara.png';
+import spaghettiCarbonaraImage from '$lib/images/spaghettiCarbonara.png'
+import ClassicTacosImage from '$lib/images/ClassicTacos.png'
+import MaplePecanImage from '$lib/images/MaplePecan.png'
 
 export const recipes = [
   {
     id: 1,
     name: 'Spaghetti Carbonara',
-    imageURL: '$lib/images/SpaghettiCarbonara.png',
+    imageURL: spaghettiCarbonaraImage,
     description: 'A classic and delicious Italian pasta dish for 4 servings.',
     // New structure for ingredients
     ingredients: [
@@ -25,7 +27,7 @@ export const recipes = [
   {
     id: 2,
     name: 'Classic Tacos',
-    imageURL: 'https://assets.bonappetit.com/photos/5a7de2023a4b3734e043138b/16:9/w_2560%2Cc_limit/tacos-al-pastor.jpg',
+    imageURL: ClassicTacosImage,
     description: 'Classic ground beef tacos for a family of 4.',
     ingredients: [
         { name: 'Ground Beef', quantity: 1, unit: 'lb' },
@@ -40,6 +42,32 @@ export const recipes = [
         'Stir in taco seasoning and 1/4 cup of water. Bring to a simmer and cook for 5 minutes.',
         'Warm taco shells according to package directions.',
         'Serve beef in taco shells with lettuce, tomatoes, and cheese.'
+    ]
+  },
+    {
+    id: 3,
+    name: 'Maple Pecan',
+    imageURL: MaplePecanImage,
+    description: 'Classic ground beef tacos for a family of 4.',
+    ingredients: [
+        { name: 'Large Eggs', quantity: 3, unit: '' },
+        { name: 'Suger', quantity: 1, unit: 'cup' },
+        { name: 'Vanilla Extract', quantity: 1, unit: 'TBSP' },
+        { name: 'Melted Butter', quantity: 100, unit: 'grams' },
+        { name: 'Raising Flour', quantity: 1.25, unit: 'cups' },
+        { name: 'Sour Cream', quantity: 200, unit: 'ml' },
+        { name: 'Pecan', quantity: 1, unit: 'handfull' },
+        { name: 'Maple Syrup', quantity: 1, unit: 'cup' }
+    ],
+    instructions: [
+        'In a bowl, whisk the 3 eggs.',
+        'Switch to the paddle attachment on your mixer. Add the rest of the ingredients and mix well.',
+        'Transfer the mixture to a baking pan (I use a ceramic pan, maybe size 26 cm).',
+        'Arrange halved, unsweetened pecans on top of the mixture (as many as you like).',
+        'Place in a preheated oven at 180°C (350°F).',
+        'After 30 minutes, check with a toothpick, of course. Sometimes it needs a little more time...',
+        'The cake will turn a beautiful golden brown.',
+        'Once the cake is ready, take it out of the oven, prick it with the toothpick while it is still warm, and spread the maple syrup over the cake.',
     ]
   }
   // Add more recipes here...

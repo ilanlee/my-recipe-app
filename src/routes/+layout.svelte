@@ -5,7 +5,7 @@
 <div class="app-container">
   <header>
     <a href="/" class="home-link">
-      <h1>Header:My Recipe Book</h1>
+      <h1>My Recipe Book</h1>
     </a>
     </header>
 
