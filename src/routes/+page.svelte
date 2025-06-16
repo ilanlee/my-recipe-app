@@ -1,23 +1,37 @@
 <script>
   import RecipeCard from '$lib/RecipeCard.svelte';
   import { recipes } from '../data.js';
+  import { currentLanguage } from '../stores';
 
   let searchTerm = '';
 
+  const uiStrings = {
+    pageTitle: {
+      en: "Recipes",
+      he: "מתכונים"
+    },
+    searchPlaceholder: {
+      en: "Search for a recipe...",
+      he: "חפש מתכון..."
+    }
+  };
+
   // Reactive declaration: This will re-run whenever `searchTerm` changes.
-  $: filteredRecipes = recipes.filter(recipe =>
-    recipe.name.toLowerCase().includes(searchTerm.toLowerCase())
+  $: filteredRecipes = recipes.filter(recipe => {
+    const recipeNameInCurrentLang = recipe.name[$currentLanguage] || recipe.name['en']; // Fallback to English
+    return recipeNameInCurrentLang.toLowerCase().includes(searchTerm.toLowerCase());
+  }
   );
 </script>
 
 <main>
-  <h1>Svelte Recipes</h1>
+  <h1>{uiStrings.pageTitle[$currentLanguage]}</h1>
 
   <div class="search-container">
     <input
       type="text"
       bind:value={searchTerm}
-      placeholder="Search for a recipe..."
+      placeholder={uiStrings.searchPlaceholder[$currentLanguage]}
     />
   </div>
 
@@ -33,7 +47,7 @@
 <style>
   main {
     padding: 1rem;
-    max-width: 1200px;
+    /* max-width is now handled by +layout.svelte for the main tag */
     margin: 0 auto;
   }
   h1 {

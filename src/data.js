@@ -15,11 +15,11 @@ export const recipes = [
       he: 'מנת פסטה איטלקית קלאסית וטעימה ל-4 סועדים.'
     },
     ingredients: [
-      { name: { en: 'Spaghetti', he: 'ספגטי' }, quantity: 400, unit: 'g' },
-      { name: { en: 'Large Egg Yolks', he: 'חלמונים גדולים' }, quantity: 4, unit: '' },
-      { name: { en: 'Pancetta', he: 'פנצ\'טה' }, quantity: 150, unit: 'g' },
-      { name: { en: 'Pecorino Romano Cheese', he: 'גבינת פקורינו רומנו' }, quantity: 50, unit: 'g' },
-      { name: { en: 'Black Pepper', he: 'פלפל שחור' }, quantity: 1, unit: 'tsp' },
+      { name: { en: 'Spaghetti', he: 'ספגטי' }, quantity: 400, unit: { en: 'grams', he: 'גרמים' } },
+      { name: { en: 'Large Egg Yolks', he: 'חלמונים גדולים' }, quantity: 4, unit: { en: '', he: ''} },
+      { name: { en: 'Pancetta', he: 'פנצ\'טה' }, quantity: 150, unit:{ en: 'grams', he: 'גרמים' } },
+      { name: { en: 'Pecorino Romano Cheese', he: 'גבינת פקורינו רומנו' }, quantity: 50, unit: { en: 'grams', he:'גרמים'} },
+      { name: { en: 'Black Pepper', he: 'פלפל שחור' }, quantity: 1, unit: {en: 'tsp', he:'כפיות'} },
     ],
     instructions: {
       en: [
@@ -50,12 +50,12 @@ export const recipes = [
       he: 'טאקוס בקר טחון קלאסי למשפחה של 4.' // Example, add actual translation
     },
     ingredients: [
-        { name: { en: 'Ground Beef', he: 'בקר טחון' }, quantity: 1, unit: 'lb' },
-        { name: { en: 'Taco Seasoning', he: 'תבלין לטאקו' }, quantity: 1, unit: 'oz' },
-        { name: { en: 'Hard Taco Shells', he: 'קונכיות טאקו קשות' }, quantity: 12, unit: '' },
-        { name: { en: 'Shredded Lettuce', he: 'חסה קצוצה' }, quantity: 2, unit: 'cups' },
-        { name: { en: 'Diced Tomatoes', he: 'עגבניות קצוצות' }, quantity: 1, unit: 'cup' },
-        { name: { en: 'Shredded Cheddar Cheese', he: 'גבינת צ\'דר מגוררת' }, quantity: 1, unit: 'cup' }
+        { name: { en: 'Ground Beef', he: 'בקר טחון' }, quantity: 1, unit: { en: 'lb', he: 'ליברה' } },
+        { name: { en: 'Taco Seasoning', he: 'תבלין לטאקו' }, quantity: 1, unit: { en: 'oz', he: 'אונקיה' } },
+        { name: { en: 'Hard Taco Shells', he: 'קונכיות טאקו קשות' }, quantity: 12, unit: { en: '', he: '' } },
+        { name: { en: 'Shredded Lettuce', he: 'חסה קצוצה' }, quantity: 2, unit: { en: 'cups', he: 'כוסות' } },
+        { name: { en: 'Diced Tomatoes', he: 'עגבניות קצוצות' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } },
+        { name: { en: 'Shredded Cheddar Cheese', he: 'גבינת צ\'דר מגוררת' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } }
     ],
     instructions: { // Example, add actual translation for instructions
       en: [
@@ -84,14 +84,14 @@ export const recipes = [
       he: 'עוגת מייפל פקאן - מתוקה ואוורירית' // Example, add actual translation
     },
     ingredients: [
-        { name: { en: 'Large Eggs', he: 'ביצים גדולות' }, quantity: 3, unit: '' },
-        { name: { en: 'Sugar', he: 'סוכר' }, quantity: 1, unit: 'cup' }, // Corrected "Suger" to "Sugar"
-        { name: { en: 'Vanilla Extract', he: 'תמצית וניל' }, quantity: 1, unit: 'TBSP' },
-        { name: { en: 'Melted Butter', he: 'חמאה מומסת' }, quantity: 100, unit: 'grams' },
-        { name: { en: 'Raising Flour', he: 'קמח תופח' }, quantity: 1.25, unit: 'cups' },
-        { name: { en: 'Sour Cream', he: 'שמנת חמוצה' }, quantity: 200, unit: 'ml' },
-        { name: { en: 'Pecan', he: 'פקאן' }, quantity: 1, unit: 'handfull' }, // Note: "handfull" is not a precise unit
-        { name: { en: 'Maple Syrup', he: 'סירופ מייפל' }, quantity: 1, unit: 'cup' }
+        { name: { en: 'Large Eggs', he: 'ביצים גדולות' }, quantity: 3, unit: { en: '', he: '' } },
+        { name: { en: 'Sugar', he: 'סוכר' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } },
+        { name: { en: 'Vanilla Extract', he: 'תמצית וניל' }, quantity: 1, unit: { en: 'TBSP', he: 'כף' } },
+        { name: { en: 'Melted Butter', he: 'חמאה מומסת' }, quantity: 100, unit: { en: 'grams', he: 'גרם' } },
+        { name: { en: 'Raising Flour', he: 'קמח תופח' }, quantity: 1.25, unit: { en: 'cups', he: 'כוסות' } },
+        { name: { en: 'Sour Cream', he: 'שמנת חמוצה' }, quantity: 200, unit: { en: 'ml', he: 'מ"ל' } },
+        { name: { en: 'Pecan', he: 'פקאן' }, quantity: 1, unit: { en: 'handful', he: 'חופן' } }, // Corrected "handfull" and translated
+        { name: { en: 'Maple Syrup', he: 'סירופ מייפל' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } }
     ],
     instructions: { // Example, add actual translation for instructions
       en: [
