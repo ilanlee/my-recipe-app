@@ -1,6 +1,8 @@
 import spaghettiCarbonaraImage from '$lib/images/spaghettiCarbonara.png'
 import ClassicTacosImage from '$lib/images/ClassicTacos.png'
 import MaplePecanImage from '$lib/images/MaplePecan.png'
+import OrasChesscakeImage from '$lib/images/OrasChesscake.png'
+
 
 export const recipes = [
   {
@@ -115,6 +117,59 @@ export const recipes = [
         'כשהעוגה מוכנה, הוציאו אותה מהתנור, דקרו אותה עם קיסם כשהיא עוד חמה, ומרחו את סירופ המייפל על העוגה.'
       ]
     }
-  }
+  },
+  {
+    id: 4,
+    name: {
+      en: "Ora's Cheesecake",
+      he: 'עוגת גבינה של אורה'
+    },
+    imageURL: OrasChesscakeImage,
+    description: {
+      en: "Ora's Cheesecake - perfectly balanced with airy texture", // Corrected escaping and typo
+      he: 'עוגת הגבינה של אורה - מאוזנת ומאווררת'
+    },
+    ingredients: [
+        { "name": { "en": "Eggs", "he": "ביצים" }, "quantity": 5, "unit": { "en": "", "he": "" } },
+        { "name": { "en": "Vanilla Sugar", "he": "סוכר וניל" }, "quantity": 1, "unit": { "en": "", "he": "" } },
+        { "name": { "en": "White Cheese 9%", "he": "גבינה לבנה 9%" }, "quantity": 500, "unit": { "en": "grams", "he": "גרם" } },
+        { "name": { "en": "Baking Powder", "he": "אבקת אפייה" }, "quantity": 0.25, "unit": { "en": "tsp", "he": "כפית" } },
+        { "name": { "en": "Salt", "he": "מלח" }, "quantity": 1, "unit": { "en": "pinch", "he": "קורט" } },
+        { "name": { "en": "Lemon Zest", "he": "גרד קליפת לימון" }, "quantity": 1, "unit": { "en": "", "he": "" } },
+        { "name": { "en": "Sweet Cream", "he": "שמנת מתוקה" }, "quantity": 250, "unit": { "en": "grams", "he": "גרם" } }
+    ],
+    instructions: {
+      en: [
+        'Separate the 5 eggs into yolks and whites. Whip the egg whites, gradually adding 1 cup of sugar. Continue whipping until the meringue is stiff and stable.',
+		    'In a separate bowl, mix: 5 egg yolks 1 packet vanilla sugar (or 1 teaspoon liquid vanilla extract) 500g 9% white cheese 3 tablespoons self-rising flour (If you don\'t have self-rising flour, use a quarter teaspoon of baking powder and a pinch of salt.)',
+		    'Mix all these ingredients well, then: Gently fold this mixture into the whipped egg whites, being careful not to break down the foam. It\'s okay if some lumps of egg white remain. If using a mixer, you can mix on a very slow speed. The texture should be combined, but with peaks.',
+		    'Preheat the oven to 180 degrees Celsius (350°F). Grease a 26 cm (10-inch) springform pan. Pour the mixture into the pan and bake for 30-40 minutes, or until done – it should have a nice brown top, and a skewer inserted into the cake should come out dry. Let the cake cool in the oven with the door half-open (or remove it from the oven). As the cake cools, the center will sink slightly.',
+		    'Whip 250g of sweet cream (heavy cream) with 2 tablespoons of sugar. Spread this over the cake after it has cooled.',
+
+      ],
+      he: [
+		    'להפריד את 5 הביצים לחלמונים וחלבונים.',
+		    'את החלבונים להקציף ולהוסיף לאט 1 כוס סוכר.',
+		    'להקציף עד שהקצף חזק ויציב.',
+		    'בקערה נפרדת, לערבב:',
+		    '5 חלמונים',
+		    '1 סוכר וניל (או כפית וניל נוזלי)',
+		    '500 גרם גבינה לבנה 9%',
+		    '3 כפות קמח תופח',
+		    '(אם אין קמח תופח – רבע כפית אבקת אפיה וקורט מלח)',
+		    'את כל החומרים לערבב היטב ואז:',
+		    'להוסיף לקערת החלבונים המוקצפים ולערבב מאוד מעדינות, שהקצף לא יישבר – יישארו גושי חלבון וזה בסדר.',
+		    'במיקסר אפשר לערבב במהירות מאוד איטית.',
+		    'המרקם צריך להיות מעורבב, אבל עם גבעות.',
+		    'לחמם תנור ל-180 מעלות.',
+		    'לשמן תבנית קפיצית מס. 26.',
+		    'לצקת את התערובת לתבנית ולאפות 30-40 דקות, או עד שמוכן – מקבל גוון חום יפה למעלה, הקיסם צריך לצאת יבש מהעוגה.',
+		    'לתת לעוגה להתקרר בתנור כשהדלת חצי פתוחה (או להוציא מהתנור).',
+		    'כשהעוגה מתקררת החלק הפנימה צונח מעט.',
+		    'להקציף 250 גרם שמנת מתוקה עם 2 כפות סוכר.',
+		    'למרוח מעל העוגה לאחר קירור.',
+      ]
+    }
+  }
   // Add more recipes here...
 ];

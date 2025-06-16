@@ -99,11 +99,11 @@
 
   <div class="instructions-section">
     <h2>{uiStrings.instructions[$currentLanguage as Language]}</h2>
-    <ol>
+    <ul>
       {#each recipeInstructions as step}
         <li>{step}</li>
       {/each}
-    </ol>
+    </ul>
   </div>
 </div>
 
