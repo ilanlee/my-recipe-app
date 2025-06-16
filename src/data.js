@@ -23,6 +23,11 @@ export const recipes = [
       { name: { en: 'Pecorino Romano Cheese', he: 'גבינת פקורינו רומנו' }, quantity: 50, unit: { en: 'grams', he:'גרמים'} },
       { name: { en: 'Black Pepper', he: 'פלפל שחור' }, quantity: 1, unit: {en: 'tsp', he:'כפיות'} },
     ],
+    tags: [
+      { en: 'pasta', he: 'פסטה' },
+      { en: 'italian', he: 'איטלקי' },
+      { en: 'dinner', he: 'ארוחת ערב' }
+    ],
     instructions: {
       en: [
         'Cook spaghetti according to package directions.',
@@ -59,6 +64,11 @@ export const recipes = [
         { name: { en: 'Diced Tomatoes', he: 'עגבניות קצוצות' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } },
         { name: { en: 'Shredded Cheddar Cheese', he: 'גבינת צ\'דר מגוררת' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } }
     ],
+    tags: [
+      { en: 'mexican', he: 'מקסיקני' },
+      { en: 'beef', he: 'בקר' },
+      { en: 'quick', he: 'מהיר' }
+    ],
     instructions: { // Example, add actual translation for instructions
       en: [
         'In a large skillet, cook ground beef over medium-high heat until browned. Drain excess fat.',
@@ -94,6 +104,11 @@ export const recipes = [
         { name: { en: 'Sour Cream', he: 'שמנת חמוצה' }, quantity: 200, unit: { en: 'ml', he: 'מ"ל' } },
         { name: { en: 'Pecan', he: 'פקאן' }, quantity: 1, unit: { en: 'handful', he: 'חופן' } }, // Corrected "handfull" and translated
         { name: { en: 'Maple Syrup', he: 'סירופ מייפל' }, quantity: 1, unit: { en: 'cup', he: 'כוס' } }
+    ],
+    tags: [
+      { en: 'cake', he: 'עוגה' },
+      { en: 'dessert', he: 'קינוח' },
+      { en: 'sweet', he: 'מתוק' }
     ],
     instructions: { // Example, add actual translation for instructions
       en: [
@@ -137,6 +152,13 @@ export const recipes = [
         { "name": { "en": "Salt", "he": "מלח" }, "quantity": 1, "unit": { "en": "pinch", "he": "קורט" } },
         { "name": { "en": "Lemon Zest", "he": "גרד קליפת לימון" }, "quantity": 1, "unit": { "en": "", "he": "" } },
         { "name": { "en": "Sweet Cream", "he": "שמנת מתוקה" }, "quantity": 250, "unit": { "en": "grams", "he": "גרם" } }
+    ],
+    tags: [
+      { en: 'cheesecake', he: 'עוגת גבינה' },
+      { en: 'dessert', he: 'קינוח' },
+      { en: 'baking', he: 'אפייה' },
+      { en: 'mom', he: 'אמא' }
+
     ],
     instructions: {
       en: [
